@@ -1,0 +1,49 @@
+/*-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x
+
+									REAL TIME SYSTEMS
+							      		RUSHANG V KARIA
+							
+								
+SCHEDULING ANALYSIS OF EDF, RM , DM AND FIXED PRIORITY ALGORITHMS FOR REAL TIME SYSTEMS								
+
+User input is Enabled. WCET =max Execution time
+This program was developed on a computer with a resolution of 1360x768.
+Please make sure that you view the code in only this or a greater resolution for convenient viewing.
+Also please make sure that you are viewing it in fullscreen
+
+For best viewing open in gedit  (fullscreen)
+Go to edit select preferences.
+Enable line numbers
+
+Go to font and colors
+Select Oblivion
+
+-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x*/
+-----------------------------------------
+INSTRUCTIONS TO COMPILE
+-----------------------------------------
+Please browse to source and type "make" at the console.
+
+Please make sure that the linker knows where to find the math library else please make sure you give the correct path to gcc command
+
+-----------------------------------------
+INSTRUCTIONS TO RUN
+-----------------------------------------
+Type "./Program" at the console
+
+The report is shown after you enter all the tasksets
+
+##################################################################################################################
+NOTE: you may have to be the root user if the current folder does not allow normal users to read/write to files.
+      This program writes 6 files to the same directory from where it is run
+##################################################################################################################
+
+-----------------------------------------
+BASIC ERRORS THAT MIGHT BE ENCOUNTERED
+-----------------------------------------
+If the program crashes please reduce the limit of MAX_* in the header file since it might be the case that the system does not have enough memory.
+
+Also try raising MAX_MEMORY to more than 1000 if the no of tasks is high in number. Since this variable keeps track of the RT,Loading Factor tests,
+having its value greater than the no of iterations required for convergence is crucial.
+
+

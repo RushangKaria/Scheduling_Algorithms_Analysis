@@ -1,0 +1,103 @@
+************************* TASK SET 1************************
+TOTAL_TASKS ==--> 3
+TASK ID  0 	| Fixed Priority--> 3 | Deadline-->    4.000 | Period-->    6 | WCET-->   2.000 | Utilization-->   0.333 |
+TASK ID  1 	| Fixed Priority--> 2 | Deadline-->    5.000 | Period-->    8 | WCET-->   2.000 | Utilization-->   0.250 |
+TASK ID  2 	| Fixed Priority--> 1 | Deadline-->    7.000 | Period-->    9 | WCET-->   3.000 | Utilization-->   0.333 |
+************************************************************
+
+------------------------ APPLYING EDF ANALYSIS -------------------------
+Total density 	 	     : 1.328571
+EDF Utilization test status  : [FAILED]
+Schedulability (EDF)         : [NOT SURE]
+		---------> Loading Factor Test <-----------
+Loading Factor Test	    : [PASSED]
+Schedulability (EDF)        : [SCHEDULABLE]
+------------------------ APPLYING RM ANALYSIS -------------------------
+Max utilization 	  	  : 0.779763
+Total utilization 	  	  : 1.328571
+RM/DM  Utilization test status 	  : [FAILED]
+Schedulability (RM)         	  : [NOT SURE]
+		---------> Response Time Analysis <-----------
+U(0)		: [PASSED]
+U(1)		: [FAILED]
+RT_Test Task 1	: [PASSED]
+WRT(1)		: 4.000000
+U(2)		: [FAILED]
+RT_Test Task 2	: [FAILED]
+Response Time Analysis	    : [FAILED]
+Schedulability (RM/DM)      : [NOT SCHEDULABLE]
+------------------------ APPLYING DM ANALYSIS -------------------------
+Max utilization 	  	  : 0.779763
+Total utilization 	  	  : 1.328571
+RM/DM  Utilization test status 	  : [FAILED]
+Schedulability (RM)         	  : [NOT SURE]
+		---------> Response Time Analysis <-----------
+U(0)		: [PASSED]
+U(1)		: [FAILED]
+RT_Test Task 1	: [PASSED]
+WRT(1)		: 4.000000
+U(2)		: [FAILED]
+RT_Test Task 2	: [FAILED]
+Response Time Analysis	    : [FAILED]
+Schedulability (RM/DM)      : [NOT SCHEDULABLE]
+------------------------ APPLYING FIXED PRIORITY ANALYSIS -------------------------
+Task 0 UB TEST			  : [PASSED]
+Task 1 UB TEST			  : [PASSED]
+Task 2 UB TEST		:[FAILED]
+RT_Test Task 2		: [FAILED]
+Response Time Analysis	          : [FAILED]
+Schedulability (RM/DM)            : [NOT SCHEDULABLE]
+
+************************* TASK SET 2************************
+TOTAL_TASKS ==--> 4
+TASK ID  0 	| Fixed Priority--> 4 | Deadline-->  200.000 | Period-->  200 | WCET-->  60.000 | Utilization-->   0.300 |
+TASK ID  1 	| Fixed Priority--> 3 | Deadline-->  100.000 | Period-->  100 | WCET-->  20.000 | Utilization-->   0.200 |
+TASK ID  2 	| Fixed Priority--> 2 | Deadline-->  150.000 | Period-->  150 | WCET-->  40.000 | Utilization-->   0.267 |
+TASK ID  3 	| Fixed Priority--> 1 | Deadline-->  350.000 | Period-->  350 | WCET-->  40.000 | Utilization-->   0.114 |
+************************************************************
+
+------------------------ APPLYING EDF ANALYSIS -------------------------
+Total density		    	  : 0.880952
+EDF Utilization test status 	  : [PASSED]
+Schedulability (EDF)        	  : [SCHEDULABLE]
+------------------------ APPLYING RM ANALYSIS -------------------------
+Max utilization 	  	  : 0.756828
+Total utilization 	  	  : 0.880952
+RM/DM  Utilization test status 	  : [FAILED]
+Schedulability (RM)         	  : [NOT SURE]
+		---------> Response Time Analysis <-----------
+U(1)		: [PASSED]
+U(2)		: [PASSED]
+U(0)		: [PASSED]
+U(3)		: [FAILED]
+RT_Test Task 3	: [PASSED]
+WRT(3)		: 300.000000
+Response Time Analysis	    : [PASSED]
+Schedulability (RM/DM)      : [SCHEDULABLE]
+------------------------ APPLYING DM ANALYSIS -------------------------
+Max utilization 	  	  : 0.756828
+Total utilization 	  	  : 0.880952
+RM/DM  Utilization test status 	  : [FAILED]
+Schedulability (RM)         	  : [NOT SURE]
+		---------> Response Time Analysis <-----------
+U(1)		: [PASSED]
+U(2)		: [PASSED]
+U(0)		: [PASSED]
+U(3)		: [FAILED]
+RT_Test Task 3	: [PASSED]
+WRT(3)		: 300.000000
+Response Time Analysis	    : [PASSED]
+Schedulability (RM/DM)      : [SCHEDULABLE]
+------------------------ APPLYING FIXED PRIORITY ANALYSIS -------------------------
+Task 0 UB TEST			  : [PASSED]
+Task 1 UB TEST			  : [PASSED]
+Task 2 UB TEST		:[FAILED]
+RT_Test Task 2		: [PASSED]
+WRT(2)		   	: 140.000000
+Task 3 UB TEST		:[FAILED]
+RT_Test Task 3		: [PASSED]
+WRT(3)		   	: 300.000000
+Response Time Analysis	          : [PASSED]
+Schedulability (RM/DM)            : [SCHEDULABLE]
+
+
